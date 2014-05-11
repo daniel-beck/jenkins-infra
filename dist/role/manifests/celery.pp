@@ -4,4 +4,9 @@
 class role::celery {
   include profile::base
   include profile::buildslave
+
+  file { '/test':
+    ensure => present,
+    content => 'hahah',
+  }
 }
