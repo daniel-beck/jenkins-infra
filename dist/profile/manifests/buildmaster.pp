@@ -15,7 +15,7 @@
 #
 class profile::buildmaster(
   $anonymous_access                = false,
-  $admin_ldap_groups               = ['admins'],
+  $admin_ldap_groups               = ['jenkins-admins'],
   $ci_fqdn                         = 'ci.jenkins.io',
   $docker_image                    = 'jenkins/jenkins',
   $docker_tag                      = 'lts-alpine',
